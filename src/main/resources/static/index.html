@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Студенты и хобби</title>
+    <script src="scrypt.js"></script>
+</head>
+<body>
+<h1>Студенты</h1>
+<div>
+    <label>Имя: <input type="text" id="nameFilter" oninput=loadStudents() /></label>
+    <label>Хобби: <input type="text" id="hobbyFilter" oninput=loadStudents() /></label>
+</div>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th><th>Имя</th><th>Фамилия</th><th>Возраст</th><th>Хобби</th>
+    </tr>
+    </thead>
+    <tbody id="students-tbody"></tbody>
+</table>
+<script>
+    loadStudents();
+</script>
+</body>
+</html>
